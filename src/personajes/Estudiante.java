@@ -1,5 +1,5 @@
 package personajes;
 
-public class Estudiante {
+public class Estudiante extends Mago{
 
 }
