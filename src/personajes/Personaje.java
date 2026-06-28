@@ -5,6 +5,7 @@ import java.util.*;
 public abstract class Personaje {
 	private String nombre;
 	private int puntosVida;
+	private int puntosVidaMax;
 	private int nivelMagia;
 	private List<Hechizo> hechizos;
 	
