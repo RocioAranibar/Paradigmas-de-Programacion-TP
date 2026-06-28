@@ -1,5 +1,5 @@
 package personajes;
 
-public class Auror {
+public class Auror extends Mago{
 
 }

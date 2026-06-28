@@ -1,5 +1,5 @@
 package personajes;
 
-public class Seguidor {
+public class Seguidor extends Mortigafo {
 
 }

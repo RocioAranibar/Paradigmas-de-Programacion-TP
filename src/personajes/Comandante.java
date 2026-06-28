@@ -1,5 +1,5 @@
 package personajes;
 
-public class Comandante {
+public class Comandante extends Mortigafo {
 
 }

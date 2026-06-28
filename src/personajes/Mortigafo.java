@@ -1,5 +1,5 @@
 package personajes;
 
-public class Mortigafo {
+public class Mortigafo extends Personaje{
 
 }
