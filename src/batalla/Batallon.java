@@ -3,5 +3,5 @@ import java.util.*;
 
 public class Batallon {
 	List<String> secuenciaAtaque;
-	List<String> hechizosLanzados;
+	List<String> hechizoLanzado;
 }
