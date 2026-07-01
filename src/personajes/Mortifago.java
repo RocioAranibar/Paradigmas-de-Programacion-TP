@@ -14,4 +14,8 @@ public class Mortifago extends Personaje{
 				throw new IllegalStateException("El Mortifago no tiene el hechizo indicado.");
 			}	
 	}
+	@Override
+	public int modificarDanio(int danioBase) {
+	    return danioBase + getNivelMagia() / 5;
+	}
 }
