@@ -117,6 +117,6 @@ public class Batallon {
 		hechizos.add(hechizo);
 		
 		this.historialHechizos.put(personaje, hechizos);
-		
+	
 	}
 }
