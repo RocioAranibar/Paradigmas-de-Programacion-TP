@@ -14,4 +14,8 @@ public class Mago extends Personaje{
 				throw new IllegalStateException("El mago no tiene el hechizo indicado.");
 			}	
 	}
+	@Override
+	public int modificarCuracion(int curacionBase) {
+	    return curacionBase + getNivelMagia() * 0.5;
+	}
 }
