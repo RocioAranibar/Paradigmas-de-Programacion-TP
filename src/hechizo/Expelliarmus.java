@@ -6,6 +6,8 @@ public class Expelliarmus implements Hechizo {
 
     @Override
     public void ejecutar(Personaje atacante, Personaje objetivo) {
-        objetivo.recibirDanio(20);
+        // EL DAÑO DEPENDE DEL TIPO DE PERSONAJE QUE LANZA EL HECHIZO
+        int danio = atacante.modificarDanio(20);
+        objetivo.recibirDanio(danio);
     }
 }
