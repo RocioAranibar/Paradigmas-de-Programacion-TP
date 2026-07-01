@@ -6,6 +6,7 @@ public class Protego implements Hechizo {
 
     @Override
     public void ejecutar(Personaje atacante, Personaje objetivo) {
-        atacante.curar(15);
+        int curacion = atacante.modificarCuracion(15);
+        atacante.curar(curacion);
     }
 }
