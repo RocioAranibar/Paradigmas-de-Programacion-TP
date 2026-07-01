@@ -47,6 +47,7 @@ public abstract class Personaje {
 	public void agregarHechizo(Hechizo hechizo) {
 		hechizos.add(hechizo);
 	}
+	
 	public int modificarDanio(int danioBase) {
 	    return danioBase;
 	}
