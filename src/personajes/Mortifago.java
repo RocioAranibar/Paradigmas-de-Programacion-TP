@@ -14,8 +14,9 @@ public class Mortifago extends Personaje{
 				throw new IllegalStateException("El Mortifago no tiene el hechizo indicado.");
 			}	
 	}
+	//LOS MORTIFAGOS SON MAS LETALES CON LOS HECHIZOS DE ATAQUE
 	@Override
 	public int modificarDanio(int danioBase) {
-	    return danioBase + getNivelMagia() / 5;
+	    return danioBase + getNivelMagia() * 0.2;
 	}
 }
