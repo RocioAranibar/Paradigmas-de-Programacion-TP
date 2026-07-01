@@ -47,7 +47,7 @@ public abstract class Personaje {
 	public void agregarHechizo(Hechizo hechizo) {
 		hechizos.add(hechizo);
 	}
-	
+	// AGREGUE DOS METODOS NUEVOS PARA MODIFICAR EL DAÑO Y LA CURACIÓN SEGÚN EL PERSONAJE
 	public int modificarDanio(int danioBase) {
 	    return danioBase;
 	}
