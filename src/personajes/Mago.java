@@ -14,8 +14,9 @@ public class Mago extends Personaje{
 				throw new IllegalStateException("El mago no tiene el hechizo indicado.");
 			}	
 	}
+	// LOS MAGOS CURAN MEJOR QUE LOS MORTIFAGOS
 	@Override
 	public int modificarCuracion(int curacionBase) {
-	    return curacionBase + getNivelMagia() * 0.5;
+	    return curacionBase + getNivelMagia() * 0.2;
 	}
 }
