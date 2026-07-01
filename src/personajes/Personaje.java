@@ -15,4 +15,36 @@ public abstract class Personaje {
 		this.puntosVida = puntosVida;
 		this.hechizos = hechizos;
 	}
+	public abstract void lanzarHechizo(Hechizo hechizo, Personaje objetivo);
+	public String getNombre() {
+		return nombre;
+	}
+	public List<Hechizo> getHechizos(){
+		return hechizos;
+	}
+	public int getNivelMagia() {
+		return nivelMagia;
+	}
+	public int getPuntosVida() {
+		return puntosVida;
+	}
+	
+	public void recibirDanio(int danio) {
+		puntosVida -= danio;
+		if(puntosVida < 0) {
+			puntosVida = 0;
+		}
+	}
+	public void curar (int vida) {
+		puntosVida += vida;
+		if(puntosVida > puntosVidaMax) {
+			puntosVida = puntosVidaMax;
+		}
+	}
+	public boolean estaVivo() {
+		return puntosVida > 0;
+	}
+	public void agregarHechizo(Hechizo hechizo) {
+		hechizos.add(hechizo);
+	}
 }

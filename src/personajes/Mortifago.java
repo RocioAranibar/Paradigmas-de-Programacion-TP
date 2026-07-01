@@ -1,9 +1,9 @@
 package personajes;
 import hechizo.Hechizo;
-import java.util.*;
+import java.util.List;
 
-public class Mago extends Personaje{
-	public Mago(String nombre, int puntosVida, int NivelMagia, List<Hechizo> hechizos) {
+public class Mortifago extends Personaje{
+	public Mortifago(String nombre, int puntosVida, int NivelMagia, List<Hechizo> hechizos) {
 		super(nombre,puntosVida,NivelMagia,hechizos);
 	}
 	@Override
@@ -11,7 +11,7 @@ public class Mago extends Personaje{
 			if(getHechizos().contains(hechizo)) { //Validamos que el hechizo que se quiere lanzar, lo tenga el personaje.
 				hechizo.ejecutar(this,objetivo);
 			}else {
-				throw new IllegalStateException("El mago no tiene el hechizo indicado.");
+				throw new IllegalStateException("El Mortifago no tiene el hechizo indicado.");
 			}	
 	}
 }
